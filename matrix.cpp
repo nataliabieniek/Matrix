@@ -64,3 +64,15 @@ matrix::~matrix()
     }
     delete[] macierz;
 }
+void matrix::prints()
+{
+    for(int i=0; i<wiersze; i++)
+    {
+        for(int j=0; j<kolumny; j++)
+        {
+            cout << macierz[i][j] << "\t";
+        }
+        cout << endl;
+    }
+
+}

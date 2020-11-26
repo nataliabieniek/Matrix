@@ -7,6 +7,9 @@ class matrix
     matrix(int w, int k);
     matrix(int w);
     ~matrix();
+    void prints();
+
+    
     private:
     int kolumny;
     int wiersze;
