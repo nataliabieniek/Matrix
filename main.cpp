@@ -6,5 +6,5 @@
 int main()
 {
     std::cout << "Labolatorium 3" << std::endl;
-    matrix macierz(3);
+    matrix macierz(2,3);
 }

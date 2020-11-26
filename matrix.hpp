@@ -6,6 +6,7 @@ class matrix
     public:
     matrix(int w, int k);
     matrix(int w);
+    ~matrix();
     private:
     int kolumny;
     int wiersze;

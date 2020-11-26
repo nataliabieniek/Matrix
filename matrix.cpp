@@ -54,13 +54,13 @@ matrix::matrix(int w)
                 macierz[i][j]={0};
             }
         }
-        for(int i=0;i<w;i++)
-        {
-            for(int j=0;j<w;j++)
-            {
-                cout << macierz[i][j] << "\t";
-            }
-            cout << endl;
-        }
     }
+}
+matrix::~matrix()
+{
+    for(int i=0;i<wiersze;i++)
+    {
+        delete[] macierz[i];
+    }
+    delete[] macierz;
 }
