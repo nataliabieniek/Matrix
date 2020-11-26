@@ -12,7 +12,7 @@ class matrix
     double get(int n, int m);
     int cols();
     int rows();
-
+    matrix add(matrix &m2);
 
     private:
     int kolumny;

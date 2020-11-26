@@ -102,3 +102,20 @@ int matrix::rows()
 {
     return wiersze;
 }
+matrix matrix::add(matrix &m2)
+{
+    if(kolumny!=m2.cols() && wiersze!= m2.rows())
+    {
+        std::cout << "Nie ma mozliwosci dodania. Macierze nie pasuja do siebie" << std::endl;
+        return 1;
+    }
+    matrix m_add(wiersze, kolumny);
+    for(int i=0; i<wiersze; i++)
+    {
+        for(int j=0; j<kolumny; j++)
+        {
+            macierz[i][j]=macierz[i][j]+ m2.get(i,j);
+        }
+    }
+    return m_add;
+}
