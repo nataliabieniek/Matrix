@@ -8,8 +8,8 @@ class matrix
     matrix(int w);
     ~matrix();
     void prints();
+    void set(int n, int m, int val);
 
-    
     private:
     int kolumny;
     int wiersze;

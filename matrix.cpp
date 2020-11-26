@@ -76,3 +76,12 @@ void matrix::prints()
     }
 
 }
+void matrix::set(int n, int m, int val)
+{
+    if(n>=wiersze && n<0 && m>=kolumny && m<0)
+    {
+        std::cout << "Zle dane do funkcji set" << std::endl;
+        exit(-1);
+    }
+    macierz[n][m]=val;
+}
