@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cstdlib>
+#include <fstream>
+#include <cstring>
 #include "matrix.hpp"
 
 using namespace std;
@@ -135,4 +137,73 @@ matrix matrix::subtract(matrix &m2)
         }
     }
     return m_sub;
+}
+matrix matrix::multiply(matrix &m2)
+{
+    if(wiersze !=m2.cols())
+    {
+        std::cout << "Nie ma mozliwosci mnożenia. Macierze nie pasuja do siebie" << std::endl;
+        return 1;
+    }
+    matrix m_mul(wiersze, m2.cols());
+    for(int i=0; i<wiersze; i++)
+    {
+        for(int j=0; j<m2.cols(); j++)
+        {
+            double mnozenie = 0;
+            for(int k=0;k<m2.rows();k++)
+            {
+                mnozenie += macierz[i][k]*m2.matrix::get(k,j);
+            }
+            m_mul.matrix::set(i,j,mnozenie);
+        }
+    }
+    return m_mul;
+}
+void matrix::store(string filename, string path)
+{
+    path += "\\" + filename;
+    ofstream file(path);
+
+    file << wiersze << "\t" << kolumny << endl;
+    for(int i=0; i<wiersze; i++)
+    {
+        for(int j=0; j<kolumny; j++ )
+        {
+            int wart=macierz[i][j];
+            file << wart<< "\t";
+        }
+        file << endl;
+    }
+    file.close();
+}
+matrix::matrix(std::string path)
+
+{
+    ifstream file;
+    file.open(path);
+    if(file.is_open()==false)
+    {
+        file.close();cout << "Blad otwarcia pliku" << endl;
+        exit(0);
+    }
+    else
+    {
+        file >> wiersze;
+        file >> kolumny;
+
+        macierz =new double *[wiersze];
+        for(int i=0;i<wiersze;i++)
+        {
+            macierz[i]=new double [kolumny];
+        }
+
+        for(int i =0; i<wiersze; i++)
+        {
+            for(int j=0; j<kolumny; j++)
+            {
+                file >> macierz[i][j];
+            }
+        }
+    }  
 }
