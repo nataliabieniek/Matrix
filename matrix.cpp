@@ -140,9 +140,9 @@ matrix matrix::subtract(matrix &m2)
 }
 matrix matrix::multiply(matrix &m2)
 {
-    if(wiersze !=m2.cols())
+    if(kolumny!=m2.rows())
     {
-        std::cout << "Nie ma mozliwosci mnożenia. Macierze nie pasuja do siebie" << std::endl;
+        std::cout << "Nie ma mozliwosci mnozenia. Macierze nie pasuja do siebie" << std::endl;
         return 1;
     }
     matrix m_mul(wiersze, m2.cols());
@@ -151,7 +151,7 @@ matrix matrix::multiply(matrix &m2)
         for(int j=0; j<m2.cols(); j++)
         {
             double mnozenie = 0;
-            for(int k=0;k<m2.rows();k++)
+            for(int k=0; k<m2.rows(); k++)
             {
                 mnozenie += macierz[i][k]*m2.matrix::get(k,j);
             }
