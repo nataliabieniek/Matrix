@@ -18,4 +18,5 @@ int main()
         wartosc=wartosc*3;
     }
     macierz.prints();
+    std::cout << std::endl << "Pierwszy element ma wartosc\t" <<macierz.get(0,0);
 }

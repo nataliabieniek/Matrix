@@ -9,7 +9,8 @@ class matrix
     ~matrix();
     void prints();
     void set(int n, int m, int val);
-
+    double get(int n, int m);
+    
     private:
     int kolumny;
     int wiersze;

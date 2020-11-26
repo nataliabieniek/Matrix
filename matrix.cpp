@@ -85,3 +85,12 @@ void matrix::set(int n, int m, int val)
     }
     macierz[n][m]=val;
 }
+double matrix::get(int n, int m)
+{
+    if(n>wiersze && n<0 && m>kolumny && m<0)
+    {
+        std::cout << "Zle dane do funkcji get" << std::endl;
+        return 0;;
+    }
+    return macierz[n][m];
+}
