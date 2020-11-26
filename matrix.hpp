@@ -13,7 +13,8 @@ class matrix
     int cols();
     int rows();
     matrix add(matrix &m2);
-
+    matrix subtract(matrix &m2);
+    
     private:
     int kolumny;
     int wiersze;
