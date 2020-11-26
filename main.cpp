@@ -18,5 +18,7 @@ int main()
         wartosc=wartosc*3;
     }
     macierz.prints();
-    std::cout << std::endl << "Pierwszy element ma wartosc\t" <<macierz.get(0,0);
+    std::cout << std::endl << "Pierwszy element ma wartosc\t" <<macierz.get(0,0) << std::endl;
+    std::cout << "Ilosc wierszy:\t" << macierz.rows() <<"\nIlosc kolumn:\t" << macierz.cols()<<std::endl;;
+
 }

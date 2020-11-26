@@ -10,7 +10,10 @@ class matrix
     void prints();
     void set(int n, int m, int val);
     double get(int n, int m);
-    
+    int cols();
+    int rows();
+
+
     private:
     int kolumny;
     int wiersze;

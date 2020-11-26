@@ -94,3 +94,11 @@ double matrix::get(int n, int m)
     }
     return macierz[n][m];
 }
+int matrix::cols()
+{
+    return kolumny;
+}
+int matrix::rows()
+{
+    return wiersze;
+}
