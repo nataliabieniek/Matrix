@@ -6,15 +6,15 @@
 int main()
 {
     std::cout << "Labolatorium 3" << std::endl;
-    matrix macierz(2,3);
-    matrix macierz2(2,3);
-    int wartosc=1;
+    matrix macierz(2, 3);
+    matrix macierz2(2, 3);
+    int wartosc = 1;
     std::cout << "Macierz zaraz po utworzeniu:" << std::endl;
     macierz.prints();
     std::cout << "Macierz po wpisania wartosci do niej:" << std::endl;
-    for(int i=0; i<2; i++)
+    for (int i = 0; i < 2; i++)
     {
-        for(int j=0; j<3; j++)
+        for (int j = 0; j < 3; j++)
         {
             macierz.set(i,j,wartosc);
             wartosc++;
@@ -34,5 +34,4 @@ int main()
     std::cout << "Teraz odejmiemy od tej macierzy macierz2:" << std::endl;
     macierz.subtract(macierz2);
     macierz.prints();
-    
 }
