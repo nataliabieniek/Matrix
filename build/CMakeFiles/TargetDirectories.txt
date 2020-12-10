@@ -1,0 +1,3 @@
+C:/Users/Natalia Bieniek/Desktop/studia/3 sem/jipp_2/macierz/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Natalia Bieniek/Desktop/studia/3 sem/jipp_2/macierz/build/CMakeFiles/test.dir
+C:/Users/Natalia Bieniek/Desktop/studia/3 sem/jipp_2/macierz/build/CMakeFiles/edit_cache.dir

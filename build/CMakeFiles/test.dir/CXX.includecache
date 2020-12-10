@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/matrix.hpp
+iostream
+-
+cstdlib
+-
+
+C:/Users/Natalia Bieniek/Desktop/studia/3 sem/jipp_2/macierz/src/main.cpp
+iostream
+-
+cstdlib
+-
+matrix.cpp
+C:/Users/Natalia Bieniek/Desktop/studia/3 sem/jipp_2/macierz/src/matrix.cpp
+
+C:/Users/Natalia Bieniek/Desktop/studia/3 sem/jipp_2/macierz/src/matrix.cpp
+iostream
+-
+cstdlib
+-
+fstream
+-
+cstring
+-
+matrix.hpp
+C:/Users/Natalia Bieniek/Desktop/studia/3 sem/jipp_2/macierz/src/matrix.hpp
+
