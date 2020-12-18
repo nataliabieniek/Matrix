@@ -1,9 +1,15 @@
+#ifndef matrix_hpp
+#define matrix_hpp
+
 #include <iostream>
 #include <cstdlib>
+
+
 
 class matrix
 {
     public:
+    matrix();
     matrix(int w, int k);
     matrix(int w);
     matrix(std::string path);
@@ -23,3 +29,5 @@ class matrix
     int wiersze;
     double **macierz;
 };
+
+#endif

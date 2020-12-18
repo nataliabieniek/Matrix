@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-../include/matrix.hpp
+../include/matrix/matrix.hpp
 iostream
 -
 cstdlib
@@ -17,8 +17,8 @@ iostream
 -
 cstdlib
 -
-matrix.cpp
-C:/Users/Natalia Bieniek/Desktop/studia/3 sem/jipp_2/macierz/src/matrix.cpp
+matrix/matrix.hpp
+-
 
 C:/Users/Natalia Bieniek/Desktop/studia/3 sem/jipp_2/macierz/src/matrix.cpp
 iostream
@@ -29,6 +29,6 @@ fstream
 -
 cstring
 -
-matrix.hpp
-C:/Users/Natalia Bieniek/Desktop/studia/3 sem/jipp_2/macierz/src/matrix.hpp
+matrix/matrix.hpp
+-
 

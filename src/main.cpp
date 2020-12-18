@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstdlib>
-#include "matrix.cpp"
+#include <matrix/matrix.hpp>
 
 
 int main()

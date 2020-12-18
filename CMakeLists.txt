@@ -1,6 +1,6 @@
-cmake_minimum_required( VERSION 3.19.1 )
+cmake_minimum_required( VERSION 3.0 )
 
-project(MACIERZ)
+project( MACIERZ )
 
 include_directories( ./src ./include)
 

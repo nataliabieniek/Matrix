@@ -79,29 +79,29 @@ CMakeFiles/test.dir/src/main.cpp.obj: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/main.cpp.obj: CMakeFiles/test.dir/includes_CXX.rsp
 CMakeFiles/test.dir/src/main.cpp.obj: ../src/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Natalia Bieniek\Desktop\studia\3 sem\jipp_2\macierz\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/main.cpp.obj"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\test.dir\src\main.cpp.obj -c "C:\Users\Natalia Bieniek\Desktop\studia\3 sem\jipp_2\macierz\src\main.cpp"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\test.dir\src\main.cpp.obj -c "C:\Users\Natalia Bieniek\Desktop\studia\3 sem\jipp_2\macierz\src\main.cpp"
 
 CMakeFiles/test.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/main.cpp.i"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Natalia Bieniek\Desktop\studia\3 sem\jipp_2\macierz\src\main.cpp" > CMakeFiles\test.dir\src\main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Natalia Bieniek\Desktop\studia\3 sem\jipp_2\macierz\src\main.cpp" > CMakeFiles\test.dir\src\main.cpp.i
 
 CMakeFiles/test.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/main.cpp.s"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Natalia Bieniek\Desktop\studia\3 sem\jipp_2\macierz\src\main.cpp" -o CMakeFiles\test.dir\src\main.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Natalia Bieniek\Desktop\studia\3 sem\jipp_2\macierz\src\main.cpp" -o CMakeFiles\test.dir\src\main.cpp.s
 
 CMakeFiles/test.dir/src/matrix.cpp.obj: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/matrix.cpp.obj: CMakeFiles/test.dir/includes_CXX.rsp
 CMakeFiles/test.dir/src/matrix.cpp.obj: ../src/matrix.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Natalia Bieniek\Desktop\studia\3 sem\jipp_2\macierz\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/matrix.cpp.obj"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\test.dir\src\matrix.cpp.obj -c "C:\Users\Natalia Bieniek\Desktop\studia\3 sem\jipp_2\macierz\src\matrix.cpp"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\test.dir\src\matrix.cpp.obj -c "C:\Users\Natalia Bieniek\Desktop\studia\3 sem\jipp_2\macierz\src\matrix.cpp"
 
 CMakeFiles/test.dir/src/matrix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/matrix.cpp.i"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Natalia Bieniek\Desktop\studia\3 sem\jipp_2\macierz\src\matrix.cpp" > CMakeFiles\test.dir\src\matrix.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Natalia Bieniek\Desktop\studia\3 sem\jipp_2\macierz\src\matrix.cpp" > CMakeFiles\test.dir\src\matrix.cpp.i
 
 CMakeFiles/test.dir/src/matrix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/matrix.cpp.s"
-	C:\MinGW\bin\mingw32-g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Natalia Bieniek\Desktop\studia\3 sem\jipp_2\macierz\src\matrix.cpp" -o CMakeFiles\test.dir\src\matrix.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Natalia Bieniek\Desktop\studia\3 sem\jipp_2\macierz\src\matrix.cpp" -o CMakeFiles\test.dir\src\matrix.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
