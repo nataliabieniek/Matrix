@@ -6,11 +6,34 @@
 
 using namespace std;
 
+class WrongElement : public exception
+{
+    virtual const char *what() const throw()
+    {
+        return "Exeption1: Brak zadanego elementu";
+    }
+};
+
+class WrongOpenFile : public exception
+{
+    virtual const char *what() const throw()
+    {
+        return "Exeption2: Blad otwarcia pliku";
+    }
+};
+
+class WrongSize : public exception
+{
+    virtual const char *what() const throw()
+    {
+        return "Exeption3: Zly rozmiar macierzy";
+    }
+};
 matrix::matrix(int w, int k)
 {
     if (k <= 0 && w <= 0)
     {
-        cout << "Podales zle wymiary macierzy" << endl;
+        throw WrongElement();
     }
     else
     {
@@ -36,7 +59,7 @@ matrix::matrix(int w)
 {
     if (w <= 0)
     {
-        cout << "Podales zly wymiary macierzy" << endl;
+        throw WrongElement();
     }
     else
     {
@@ -81,8 +104,7 @@ void matrix::set(int n, int m, int val)
 {
     if (n >= wiersze && n < 0 && m >= kolumny && m < 0)
     {
-        std::cout << "Zle dane do funkcji set" << std::endl;
-        exit(-1);
+        throw WrongElement();
     }
     macierz[n][m] = val;
 }
@@ -90,9 +112,7 @@ double matrix::get(int n, int m)
 {
     if (n > wiersze && n < 0 && m > kolumny && m < 0)
     {
-        std::cout << "Zle dane do funkcji get" << std::endl;
-        return 0;
-        ;
+        throw WrongElement();
     }
     return macierz[n][m];
 }
@@ -108,8 +128,7 @@ matrix matrix::add(matrix &m2)
 {
     if (kolumny != m2.cols() && wiersze != m2.rows())
     {
-        std::cout << "Nie ma mozliwosci dodania. Macierze nie pasuja do siebie" << std::endl;
-        return 1;
+        throw WrongSize();
     }
     matrix m_add(wiersze, kolumny);
     for (int i = 0; i < wiersze; i++)
@@ -125,8 +144,7 @@ matrix matrix::subtract(matrix &m2)
 {
     if (kolumny != m2.cols() && wiersze != m2.rows())
     {
-        std::cout << "Nie ma mozliwosci odejmowania. Macierze nie pasuja do siebie" << std::endl;
-        return 1;
+        throw WrongSize();
     }
     matrix m_sub(wiersze, kolumny);
     for (int i = 0; i < wiersze; i++)
@@ -142,8 +160,7 @@ matrix matrix::multiply(matrix &m2)
 {
     if (kolumny != m2.rows())
     {
-        std::cout << "Nie ma mozliwosci mnozenia. Macierze nie pasuja do siebie" << std::endl;
-        return 1;
+        throw WrongSize();
     }
     matrix m_mul(wiersze, m2.cols());
     for (int i = 0; i < wiersze; i++)
@@ -164,7 +181,10 @@ void matrix::store(string filename, string path)
 {
     path += "\\" + filename;
     ofstream file(path);
-
+    if(!file.is_open())
+    {
+        throw WrongOpenFile();
+    }
     file << wiersze << "\t" << kolumny << endl;
     for (int i = 0; i < wiersze; i++)
     {
@@ -184,9 +204,7 @@ matrix::matrix(std::string path)
     file.open(path);
     if (file.is_open() == false)
     {
-        file.close();
-        cout << "Blad otwarcia pliku" << endl;
-        exit(0);
+        throw WrongOpenFile();
     }
     else
     {
