@@ -19,7 +19,7 @@ class matrix
     double get(int n, int m);
     int cols();
     int rows();
-    matrix add(matrix &m2);
+    matrix operator+(matrix &m2)noexcept(false);
     matrix subtract(matrix &m2);
     matrix multiply(matrix &m2);
     void store(std::string filename, std::string path);

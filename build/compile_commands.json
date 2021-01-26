@@ -1,0 +1,12 @@
+[
+{
+  "directory": "C:/Users/Natalia Bieniek/Desktop/studia/3 sem/jipp_2/macierz/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/test.dir/includes_CXX.rsp -g -o CMakeFiles\\test.dir\\src\\main.cpp.obj -c \"C:\\Users\\Natalia Bieniek\\Desktop\\studia\\3 sem\\jipp_2\\macierz\\src\\main.cpp\"",
+  "file": "C:/Users/Natalia Bieniek/Desktop/studia/3 sem/jipp_2/macierz/src/main.cpp"
+},
+{
+  "directory": "C:/Users/Natalia Bieniek/Desktop/studia/3 sem/jipp_2/macierz/build",
+  "command": "C:\\MinGW\\bin\\g++.exe  @CMakeFiles/test.dir/includes_CXX.rsp -g -o CMakeFiles\\test.dir\\src\\matrix.cpp.obj -c \"C:\\Users\\Natalia Bieniek\\Desktop\\studia\\3 sem\\jipp_2\\macierz\\src\\matrix.cpp\"",
+  "file": "C:/Users/Natalia Bieniek/Desktop/studia/3 sem/jipp_2/macierz/src/matrix.cpp"
+}
+]

@@ -124,7 +124,7 @@ int matrix::rows()
 {
     return wiersze;
 }
-matrix matrix::add(matrix &m2)
+matrix matrix::operator+(matrix &m2) noexcept(false)
 {
     if (kolumny != m2.cols() && wiersze != m2.rows())
     {
