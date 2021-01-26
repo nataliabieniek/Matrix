@@ -20,15 +20,3 @@ cstdlib
 matrix/matrix.hpp
 -
 
-C:/Users/Natalia Bieniek/Desktop/studia/3 sem/jipp_2/macierz/src/matrix.cpp
-iostream
--
-cstdlib
--
-fstream
--
-cstring
--
-matrix/matrix.hpp
--
-

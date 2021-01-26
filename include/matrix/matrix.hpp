@@ -6,6 +6,7 @@
 
 
 
+
 class matrix
 {
     public:
@@ -23,9 +24,9 @@ class matrix
     matrix operator-(matrix &m2) noexcept(false);
     matrix operator*(matrix &m2) noexcept(false);
     void store(std::string filename, std::string path);
-    bool matrix::operator==(matrix &m);
-    bool matrix::operator!=(matrix &m);
-    void matrix::operator[](int row_index) noexcept(false);
+    bool operator==(matrix &m);
+    bool operator!=(matrix &m);
+    void operator[](int row_index) noexcept(false);
 
     private:
     int kolumny;

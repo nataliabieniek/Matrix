@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <fstream>
 #include <cstring>
+#include <exception>
 #include <matrix/matrix.hpp>
 
 using namespace std;

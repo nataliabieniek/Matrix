@@ -18,7 +18,7 @@ int main()
         {
             macierz.set(i,j,wartosc);
             wartosc++;
-            macierz2.set(i,j,wartosc);
+            macierz2.set(i,j,wartosc*1.5);
             wartosc++;
         }
         wartosc=wartosc*3;
