@@ -228,7 +228,7 @@ matrix::matrix(std::string path)
 }
 bool matrix::operator==(matrix &m)
 {
-    if(kolumny != m.rows() || kolumny!=m.cols())
+    if(wiersze != m.rows() || kolumny!=m.cols())
     {
         throw WrongSize();
     }
@@ -257,4 +257,19 @@ bool matrix::operator!=(matrix &m)
         }
     }
     return true;
+}
+void matrix::operator[](int row_index) noexcept(false)
+{
+    if(row_index>=wiersze && row_index <0)
+    {
+        throw WrongSize();
+    }
+    else
+    {
+         for (int i = 0; i < kolumny; i++)
+        {
+            cout << macierz[row_index][i] << " ";
+        }
+        cout << endl;
+    }
 }
