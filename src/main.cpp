@@ -29,9 +29,9 @@ int main()
     std::cout << "Dodamy do naszej macierzy nastepujaca macierz2:" << std::endl;
     macierz2.prints();
     std::cout << "Macierz 1 po dodaniu:" << std::endl;
-    macierz.add(macierz2);
+    macierz+macierz2;
     macierz.prints();
     std::cout << "Teraz odejmiemy od tej macierzy macierz2:" << std::endl;
-    macierz.subtract(macierz2);
+    macierz-macierz2;
     macierz.prints();
 }

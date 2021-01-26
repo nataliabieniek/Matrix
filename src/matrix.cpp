@@ -226,3 +226,19 @@ matrix::matrix(std::string path)
         }
     }
 }
+bool matrix::operator==(matrix &m)
+{
+    if(kolumny != m.rows() || kolumny!=m.cols())
+    {
+        throw WrongSize();
+    }
+    for (int i = 0; i < m.rows(); i++)
+    {
+        for (int j = 0; j < m.cols(); j++)
+        {
+            if (macierz[i][j] != m.get(i, j))
+                return false;
+        }
+    }
+    return true;
+}
