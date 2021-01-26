@@ -140,7 +140,7 @@ matrix matrix::operator+(matrix &m2) noexcept(false)
     }
     return m_add;
 }
-matrix matrix::subtract(matrix &m2)
+matrix matrix::operator-(matrix &m2) noexcept(false)
 {
     if (kolumny != m2.cols() && wiersze != m2.rows())
     {

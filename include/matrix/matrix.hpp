@@ -20,7 +20,7 @@ class matrix
     int cols();
     int rows();
     matrix operator+(matrix &m2)noexcept(false);
-    matrix subtract(matrix &m2);
+    matrix operator-(matrix &m2) noexcept(false);
     matrix multiply(matrix &m2);
     void store(std::string filename, std::string path);
 
