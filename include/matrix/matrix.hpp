@@ -21,7 +21,7 @@ class matrix
     int rows();
     matrix operator+(matrix &m2)noexcept(false);
     matrix operator-(matrix &m2) noexcept(false);
-    matrix multiply(matrix &m2);
+    matrix operator*(matrix &m2) noexcept(false);
     void store(std::string filename, std::string path);
 
     private:

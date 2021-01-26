@@ -156,7 +156,7 @@ matrix matrix::operator-(matrix &m2) noexcept(false)
     }
     return m_sub;
 }
-matrix matrix::multiply(matrix &m2)
+matrix matrix::operator*(matrix &m2) noexcept(false)
 {
     if (kolumny != m2.rows())
     {
