@@ -24,6 +24,7 @@ class matrix
     matrix operator*(matrix &m2) noexcept(false);
     void store(std::string filename, std::string path);
     bool matrix::operator==(matrix &m);
+    bool matrix::operator!=(matrix &m);
 
     private:
     int kolumny;
